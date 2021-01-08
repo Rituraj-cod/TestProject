@@ -9,4 +9,10 @@
     "express": "~4.14.1",
     "mongoose": "~4.8.5"
   }
+  "scripts": {
+    "build:ssr": "npm run build:client-and-server-bundles && npm run webpack:server",
+    "serve:ssr": "node dist/server",
+    "build:client-and-server-bundles": "ng build --prod && ng run angular.io-example:server",
+    "webpack:server": "webpack --config webpack.server.config.js --progress --colors"
+  }
 }
