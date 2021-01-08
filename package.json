@@ -8,7 +8,7 @@
     "body-parser": "~1.0.1",
     "express": "~4.14.1",
     "mongoose": "~4.8.5"
-  }
+  },
   "scripts": {
     "build:ssr": "npm run build:client-and-server-bundles && npm run webpack:server",
     "serve:ssr": "node dist/server",
